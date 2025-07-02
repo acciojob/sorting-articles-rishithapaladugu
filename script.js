@@ -4,17 +4,17 @@ function ignoreArticles(bandName){
 
 	}
 		
-	band.sort((a, b) => {
+	bands.sort((a, b) => {
 		const nameA = ignoreArticles(a);
-		const nmaeB = ignoreArticls(b);
-		return nameA.localCompare(nameB);
+		const nameB = ignoreArticles(b);
+		return nameA.localeCompare(nameB);
 	})
 
 const bandList = document.getElementById('band');
 bands.forEach(band => {
 	const listItem = document.createElement('li');
 	listItem.textContent = band;
-	bandList.appenedChild(listItem);
+	bandList.appendChild(listItem);
 });
 	
 
