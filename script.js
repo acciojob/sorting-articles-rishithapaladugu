@@ -17,5 +17,6 @@ bands.forEach(band => {
 	listItem.textContent = band;
 	bandList.appendChild(listItem);
 });
+console.log(bands);
 	
 
