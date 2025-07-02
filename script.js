@@ -1,7 +1,7 @@
 //your JS code here. If required.
 const bands = [' The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Blend', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
 function ignoreArticles(bandName){
-	return bandName.replace(/^(a |an |the )/i, '');
+	return bandName.replace(/^(a |an |the )/i, '').trim();
 
 	}
 		
@@ -14,7 +14,7 @@ function ignoreArticles(bandName){
 const bandList = document.getElementById('band');
 bands.forEach(band => {
 	const listItem = document.createElement('li');
-	listItem.textContent = band;
+	listItem.textContent = band.trim();
 	bandList.appendChild(listItem);
 });
 console.log(bands);
