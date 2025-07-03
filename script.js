@@ -16,4 +16,5 @@ sortedBands.forEach(band => {
 	bandList.appendChild(li);
 	
 });
+console.log(sortedBands);
 
